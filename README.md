@@ -1,26 +1,24 @@
 # AtBayTodos
+
 To do list manager
 
-****ADD****
+**_ADD_**
 Add todo task
 
-****Search****
+**_Search_**
 Search for todo from the list of todos
 
-****Sorting****
+**_Sorting_**
 Sort to see your completed, new and all todos
 
-****Completed/Incomplete Toggel****
+**_Completed/Incomplete Toggel_**
 Press on a todo item to set the status of your task
 
-****Edit****
+**_Edit_**
 Press the edit button to edit the name of your task
 
-****Delete****
+**_Delete_**
 Press the edit button to delete/remove the task
 
-***Load Button***
+**_Load Button_**
 Press the load button to load the next batch
-
-
-
