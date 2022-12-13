@@ -38,8 +38,8 @@ const Todos = () => {
 				<button className={mode === 'all' ? 'active' : ''} onClick={() => dispatch(setMode('all'))}>
 					All
 				</button>
-				<button className={mode === 'new' ? 'active' : ''} onClick={() => dispatch(setMode('new'))}>
-					New
+				<button className={mode === 'pending' ? 'active' : ''} onClick={() => dispatch(setMode('pending'))}>
+					Pending
 				</button>
 				<button className={mode === 'completed' ? 'active' : ''} onClick={() => dispatch(setMode('completed'))}>
 					Completed

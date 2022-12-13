@@ -3,7 +3,7 @@ import type { PayloadAction } from '@reduxjs/toolkit';
 import { getTodos } from '../thunks';
 import type { TodoItem } from '@atbay/types';
 
-type Mode = 'all' | 'new' | 'completed';
+type Mode = 'all' | 'pending' | 'completed';
 
 type State = {
 	data: Array<TodoItem>;
