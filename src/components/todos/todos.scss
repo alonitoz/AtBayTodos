@@ -10,7 +10,7 @@
 		height: 30px;
 		width: 24%;
 	}
-	button.inactive {
+	button:not(.active) {
 		background-color: rgb(193, 237, 244);
 	}
 }

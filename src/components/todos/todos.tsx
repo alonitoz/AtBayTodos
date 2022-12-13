@@ -35,16 +35,13 @@ const Todos = () => {
 	return (
 		<>
 			<div className="mode-buttons">
-				<button className={mode !== 'all' ? 'inactive' : ''} onClick={() => dispatch(setMode('all'))}>
+				<button className={mode === 'all' ? 'active' : ''} onClick={() => dispatch(setMode('all'))}>
 					All
 				</button>
-				<button className={mode !== 'new' ? 'inactive' : ''} onClick={() => dispatch(setMode('new'))}>
+				<button className={mode === 'new' ? 'active' : ''} onClick={() => dispatch(setMode('new'))}>
 					New
 				</button>
-				<button
-					className={mode !== 'completed' ? 'inactive' : ''}
-					onClick={() => dispatch(setMode('completed'))}
-				>
+				<button className={mode === 'completed' ? 'active' : ''} onClick={() => dispatch(setMode('completed'))}>
 					Completed
 				</button>
 			</div>
