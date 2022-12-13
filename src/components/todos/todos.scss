@@ -1,0 +1,16 @@
+@import '@atbay/variables/variables.scss';
+
+.mode-buttons {
+	display: flex;
+	gap: 6px;
+	justify-content: center;
+	margin-bottom: 20px;
+	button {
+		@include primaryButton;
+		height: 30px;
+		width: 24%;
+	}
+	button.inactive {
+		background-color: rgb(193, 237, 244);
+	}
+}

@@ -1,0 +1,48 @@
+@import '@atbay/variables/variables.scss';
+
+.todo-item-container {
+	display: flex;
+	height: 35px;
+	align-items: center;
+	gap: 4px;
+	margin-top: 10px;
+
+	.todo-item {
+		padding: 5px 10px;
+		background-color: $todo-bg-color;
+		border-radius: 4px;
+		width: 100%;
+		display: inline-flex;
+		align-items: center;
+
+		input,
+		.todo-text {
+			height: inherit;
+			background-color: transparent;
+			outline: none;
+			flex: 1;
+			cursor: pointer;
+			border: none;
+			outline: none;
+			color: rgb(114, 114, 114);
+		}
+
+		.todo-text.completed {
+			text-decoration: line-through;
+			text-decoration-thickness: 0.15em;
+			text-decoration-color: $secondary-color;
+		}
+	}
+
+	.todo-item.td-completed::before {
+		@include beforeTodo;
+		color: $secondary-color;
+		content: '\2713';
+		padding-top: 3px;
+	}
+
+	.todo-item::before {
+		@include beforeTodo;
+		content: '';
+	}
+}

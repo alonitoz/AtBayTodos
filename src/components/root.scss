@@ -1,0 +1,14 @@
+@import '../variables/variables.scss';
+
+html,
+body {
+	height: 100vh;
+	background: linear-gradient(to bottom, #ecdef8, #c7e8f4, #ecdef8);
+	font-family: $font-stack;
+	margin: 0;
+	color: $primary-font-color;
+}
+
+#root {
+	padding: 50px 0;
+}

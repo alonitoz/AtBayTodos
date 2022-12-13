@@ -1,0 +1,17 @@
+@import '@atbay/variables/variables.scss';
+
+.add-todo {
+	display: flex;
+	gap: 8px;
+	button {
+		@include secondaryButton;
+		width: 84px;
+	}
+	button:disabled {
+		background-color: $disabled-secondary-color;
+		cursor: default;
+	}
+}
+.search-todo {
+	margin: 20px 0;
+}

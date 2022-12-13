@@ -1,0 +1,68 @@
+@import './../variables/variables.scss';
+
+.app-container {
+	background-color: $app-bg-color;
+	width: 800px;
+	margin: 0 auto;
+	padding: 30px 20px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+	color: $primary-font-color;
+
+	h1 {
+		font-family: Bradley Hand;
+		font-weight: bold;
+		text-align: center;
+		font-size: 45px;
+		color: $primary-color;
+		margin-top: 0;
+	}
+
+	.add-todo {
+		display: flex;
+		gap: 8px;
+		button {
+			@include secondaryButton;
+			width: 84px;
+		}
+		button:disabled {
+			background-color: $disabled-secondary-color;
+			cursor: default;
+		}
+	}
+	.search-todo {
+		margin: 18px 0;
+	}
+	.load-button {
+		@include secondaryButton;
+		width: 100%;
+		height: 40px;
+		margin-top: 25px;
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: $large) {
+	.app-container {
+		width: 600px;
+	}
+}
+
+@media screen and (max-width: $medium) {
+	.app-container {
+		width: 500px;
+	}
+}
+
+@media screen and (max-width: $small) {
+	.app-container {
+		width: 400px;
+	}
+}
+
+@media screen and (max-width: $x-small) {
+	.app-container {
+		width: 300px;
+		padding: 20px 10px;
+	}
+}

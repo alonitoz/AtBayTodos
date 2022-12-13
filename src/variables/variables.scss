@@ -1,0 +1,42 @@
+$font-stack: 'Poppins', sans-serif;
+
+//app colors
+$primary-font-color: rgb(73, 73, 73);
+$secondary-font-color: rgb(125, 125, 125);
+$app-bg-color: #fff;
+$primary-color: rgb(49, 197, 224);
+$secondary-color: #ef96f0;
+$disabled-secondary-color: #f6d6f6;
+$todo-bg-color: rgb(232, 252, 246);
+$border-color: rgb(209, 206, 206);
+$placeholder-color: rgb(115, 115, 115);
+
+//media screen sizes
+$large: 1000px;
+$medium: 800px;
+$small: 600px;
+$x-small: 500px;
+
+//components style
+@mixin appButton {
+	color: #fff;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+}
+
+@mixin primaryButton {
+	@include appButton;
+	background-color: $primary-color;
+}
+
+@mixin secondaryButton {
+	@include appButton;
+	background-color: $secondary-color;
+}
+
+@mixin beforeTodo {
+	font-family: 'Font Awesome 5 Free';
+	display: inline-block;
+	width: 20px;
+}

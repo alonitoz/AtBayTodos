@@ -1,0 +1,25 @@
+@import '@atbay/variables/variables.scss';
+
+.primary-input {
+	padding: 5px 10px;
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid $border-color;
+	border-radius: 5px;
+	font-size: 16px;
+	outline: none;
+	caret-color: $border-color;
+	color: $secondary-font-color;
+	font-family: $font-stack;
+}
+
+.primary-input:focus {
+	border-color: $primary-color;
+}
+
+.primary-input::placeholder {
+	padding-left: 2px;
+	color: $placeholder-color;
+	opacity: 0.3;
+	font-weight: 100;
+}
