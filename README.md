@@ -2,6 +2,11 @@
 
 To do list manager
 
+1. npm install
+2. npm run dev
+
+# Main Features
+
 **_ADD_**
 Add todo task
 
