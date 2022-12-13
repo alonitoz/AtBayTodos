@@ -1,11 +1,13 @@
 # AtBayTodos
 
-To do list manager
+Todo task manager app.
+
+### Instructions
 
 1. npm install
 2. npm run dev
 
-# Main Features
+### Main Features:
 
 **_ADD_**
 Add todo task
