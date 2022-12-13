@@ -19,7 +19,7 @@ Press the edit button to edit the name of your task
 ****Delete****
 Press the edit button to delete/remove the task
 
-****Load Button***
+***Load Button***
 Press the load button to load the next batch
 
 
